@@ -1,0 +1,20 @@
+print("""
+
+KULLANICI GİRİŞ EKRANI
+
+""")
+
+sys_username =  "king445"
+sys_password ="123456"
+
+kullanici_adi = input("Kullanıcı adını giriniz. ")
+sifre = input("Şifrenizi girin. ")
+
+if (kullanici_adi == sys_username) and (sifre != sys_password) :
+    print("Şifre yanlış... ")
+elif (kullanici_adi != sys_username) and (sifre == sys_password):
+    print("Kullanıcı adı yanlış.. ")
+elif (kullanici_adi != sys_username) and (sifre != sys_password):
+    print("Kullanıcı adı ve şifre yanlış.. ")
+else:
+    print("Giriş yapıldı..")
